@@ -4,7 +4,7 @@ function Header(): JSX.Element {
 
     return (
         <div className="Header">
-            <h1>Northwind Traders</h1>
+            <h1>Northwind Traders 123</h1>
 
         </div>
     )
