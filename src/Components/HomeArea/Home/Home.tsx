@@ -1,5 +1,6 @@
 import { Desserts } from "../Desserts/Desserts";
 import Discount from "../Discount/Discount";
+import { Recommendations } from "../Recommendations/Recommendations";
 import Specials from "../Specials/Specials";
 import "./Home.css";
 
@@ -10,7 +11,10 @@ export function Home(): JSX.Element {
             <Discount />
             {/*Conditional Rendering */}
             <Specials />
-            <Desserts/>
+            {/*display list*/}
+            <Desserts />
+            {/*Events*/}
+            <Recommendations />
         </div>
     );
 }
