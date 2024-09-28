@@ -3,4 +3,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative; /* מוסיף מיקום יחסי */
+}
+
+.Logo {
+  position: absolute; /* מיקום מוחלט ביחס ל-Header */
+  left: 20px; /* מרחק מהקצה השמאלי */
+  top: 50%; /* ממקם את הלוגו באמצע האנכי */
+  transform: translateY(-50%); /* מתקן את המיקום האנכי במדויק */
 }

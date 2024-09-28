@@ -1,4 +1,5 @@
 import { BestSeller } from "../BestSeller/BestSeller";
+import { Clock } from "../Clock/Clock";
 import { Desserts } from "../Desserts/Desserts";
 import Discount from "../Discount/Discount";
 import { Recommendations } from "../Recommendations/Recommendations";
@@ -21,7 +22,8 @@ export function Home(): JSX.Element {
             <Sales present={10} category="Beverages" />
             <Sales present={15} category="Fruits" />
 
-            <BestSeller/>
+            <BestSeller />
+            <Clock/>
 
             
         </div>
