@@ -10,7 +10,7 @@ body,
 }
 
 a {
-  color: blue;
+  color: rgb(255, 0, 81);
 }
 .Box {
   display: inline-block;

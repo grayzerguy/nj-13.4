@@ -1,12 +1,14 @@
+import { NavLink } from "react-router-dom";
 import "./Menu.css";
 
 // Interpolation
 export function Menu(): JSX.Element {
     return (
         <div className="Menu">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">About</a>
+            <NavLink to={"/home"}>Home</NavLink>
+            <NavLink to={"/products"}>Products</NavLink>
+            <NavLink to={"/about"}>About</NavLink>
+
 
         </div>
     );
