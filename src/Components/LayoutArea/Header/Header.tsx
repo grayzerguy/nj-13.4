@@ -7,7 +7,7 @@ function Header(): JSX.Element {
         <div className="Header ">
 
 
-            <p className="Logo"><Logo /></p>
+            <div className="Logo"><Logo /></div>
 
 
             <h1>Northwind Traders</h1>
