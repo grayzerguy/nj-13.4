@@ -3,17 +3,12 @@ import "./ProductList.css";
 import axios from "axios";
 import ProductModel from "../../../Models/ProductModel";
 import ProductCard from "../ProductCard/ProductCard";
-import Config from "../../../Utils/Config";
 import config from "../../../Utils/Config";
-
-
-
-
 
 
 export function ProductList(): JSX.Element {
 
-    const [products, setProducts] = useState<ProductModel[]>([])
+    const [products, setProducts] = useState<ProductModel[]>()
 
     useEffect(() => {
         (async function () {
