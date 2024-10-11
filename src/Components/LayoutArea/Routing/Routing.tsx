@@ -1,9 +1,10 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import "./Routing.css";
 import Home from "../../HomeArea/Home/Home";
-import { ProductList } from "../../ProductsArea/ProductList/ProductList";
+// import { ProductList } from "../../ProductsArea/ProductList/ProductList";
 import { About } from "../../AboutArea/About/About";
 import { PageNotFound } from "../PageNotFound/PageNotFound";
+import ProductList from "../../ProductsArea/ProductList/ProductList";
 
 export function Routing(): JSX.Element {
     return (
