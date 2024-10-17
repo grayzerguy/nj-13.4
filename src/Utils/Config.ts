@@ -7,7 +7,7 @@ class Config {
 //development configuration
 class DeveloperConfig extends Config {
 
-    public productsUrl = "http://localhost:3030/api/products/"
+    public productsUrl = "http://localhost:3030/delay/api/products/"
 
 }
 //production configuration

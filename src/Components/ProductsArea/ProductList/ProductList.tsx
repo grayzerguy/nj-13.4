@@ -4,6 +4,7 @@ import ProductModel from "../../../Models/ProductModel";
 import config from "../../../Utils/Config";
 import ProductCard from "../ProductCard/ProductCard";
 import "./ProductList.css";
+import { Loading } from "../../SharedArea/Loading/Loading";
 
 function ProductList(): JSX.Element {
 
@@ -27,11 +28,11 @@ function ProductList(): JSX.Element {
 
     return (
         <div className="ProductList">
-            
-            { products.map(p => <ProductCard key={p.id} product={p} />) }
-
+            {products.length === 0 && <Loading />}
+            {products.map(p => <ProductCard key={p.id} product={p} />)}
         </div>
     );
 }
 
 export default ProductList;
+

@@ -5,6 +5,8 @@ import Home from "../../HomeArea/Home/Home";
 import { About } from "../../AboutArea/About/About";
 import { PageNotFound } from "../PageNotFound/PageNotFound";
 import ProductList from "../../ProductsArea/ProductList/ProductList";
+import { ProductDetails } from "../../ProductsArea/ProductDetails/ProductDetails";
+
 
 export function Routing(): JSX.Element {
     return (
@@ -12,6 +14,10 @@ export function Routing(): JSX.Element {
         <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/products" element={<ProductList />} />
+            
+            <Route path="/products/details/:id" element={<ProductDetails />} />
+           
+
             <Route path="/about" element={<About />} />
 
             {/* <Route path="/" element={<Home />} /> */}
