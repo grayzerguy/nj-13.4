@@ -22,7 +22,7 @@ export function ProductDetails(): JSX.Element {
             {/* {product && <ProductCard product={product} />} */}
 
             <h2>Product Details</h2>
-            
+
             {
                 product &&
                 <>
@@ -31,7 +31,7 @@ export function ProductDetails(): JSX.Element {
                     <img src={product.imageUrl} alt={product.name} className="ProductImage" />
                     <h3>Stock : {product.stock}</h3>
                     {/* <NavLink to={"/products/"} >Go back</NavLink> */}
-                    <button onClick={() => navigate(-1)}>Go back</button>
+                    <button onClick={() => navigate("/products")}>Go back</button>
                 </>
             }
         </div>

@@ -14,6 +14,7 @@ interface ProductModel {
     price: number
     stock: number
     imageUrl: string
+    image: FileList
 }
 
 export default ProductModel;
